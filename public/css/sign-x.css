@@ -1,0 +1,125 @@
+:root {
+}
+* {
+  margin: 0;
+  padding: unset;
+}
+
+.sign {
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  inset: 20px 20px;
+}
+
+.slogan {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Public Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 109.375% */
+  width: 266px;
+  align-self: flex-start;
+  margin-left: 53px;
+}
+
+.illustration {
+  background-color: #0f60ff;
+  width: 586px;
+  height: 100vh;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 50px;
+}
+
+.illustration > img:not(.logo) {
+  width: 492.888px;
+}
+
+.form {
+  width: calc(100% - 586px);
+}
+
+.form-placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-headline {
+  color: #23272e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Public Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.form-button {
+  width: 142px;
+  height: 48px;
+  border: 0;
+  border-radius: 8px;
+  background: #0f60ff;
+  align-self: end;
+  color: var(--light-solid-color-extra-white, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Public Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 122.222% */
+  letter-spacing: 0.43px;
+  outline: unset;
+  /* Light/Gray/Gray - SM */
+  box-shadow: 0px 2px 4px 0px rgba(165, 163, 174, 0.3);
+}
+
+.form-input {
+  width: 350px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid var(--light-solid-color-extra-divider, #dbdade);
+  background: var(--light-solid-color-extra-card-background, #fff);
+  text-indent: 10px;
+  color: var(--light-typography-color-placeholder-text, #4b465c);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 140% */
+}
+
+p.paragraph {
+  color: #23272e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+}
+
+a.link {
+  color: #0f60ff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
