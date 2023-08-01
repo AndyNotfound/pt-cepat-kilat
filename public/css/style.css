@@ -35,7 +35,7 @@
 }
 
 .bg-default {
-  background: linear-gradient(to top, rgb(0, 2, 0), rgb(53, 211, 61));
+  background-color: white;
   color: white;
 }
 
@@ -103,6 +103,7 @@ ul li .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #8B909A !important;
 }
 
 ul .nav-item {
@@ -111,6 +112,10 @@ ul .nav-item {
 
 .sidebar {
   width: 251px !important;
+}
+
+.sidebar-heading {
+  color: #8B909A;
 }
 
 ul li a.active {
@@ -159,7 +164,7 @@ ul li a.active {
 }
 
 .text-sidebar {
-  color: white !important;
+  color: #8B909A !important;
 }
 
 .swal2-cancel:focus {

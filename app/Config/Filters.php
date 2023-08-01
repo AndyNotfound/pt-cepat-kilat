@@ -56,7 +56,8 @@ class Filters extends BaseConfig
 		'after'  => [
 			'adminfilter' => ['except' => [
 				'home', 'home/*',
-				'siswa', 'siswa/*',
+				// 'siswa', 'siswa/*',
+				'pengiriman', 'pengiriman/*',
 				'kelas', 'kelas/*',
 				'petugas', 'petugas/*',
 				'spp', 'spp/*',

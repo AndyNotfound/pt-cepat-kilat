@@ -42,7 +42,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-default sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-default sidebar accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/home">
@@ -53,16 +53,10 @@
                 </div>
             </a>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
             <?php if (session()->get('level') == 'admin') : ?>
                 
-                <!-- Divider -->
-                <hr class="sidebar-divider">
-                
                 <!-- Heading -->
-                <div class="sidebar-heading">
+                <div class="sidebar-heading pt-3">
                     Main Menu
                 </div>
 
@@ -74,35 +68,40 @@
                     </a>
                 </li>
                 
-                <!-- Nav Item - Siswa -->
+                <!-- Nav Item - Pengiriman -->
                 <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/siswa">
-                        <div class="fas fa-fw fa-graduation-cap mr-1 ml-1"></div>
-                        <span>Data Siswa</span>
+                    <a class="nav-link text-sidebar" href="/pengiriman">
+                        <div class="fas fa-fw fa-box mr-1 ml-1"></div>
+                        <span>Pengiriman Barang</span>
                     </a>
                 </li>
 
                 <!-- Nav Item - Petugas -->
                 <li class="nav-item">
                     <a class="nav-link text-sidebar" href="/petugas">
-                        <div class="fas fa-fw fa-users mr-1 ml-1"></div>
-                        <span>Data Petugas</span>
+                        <div class="fas fa-fw fa-map-marker-alt mr-1 ml-1"></div>
+                        <span>Pelacakan Barang</span>
                     </a>
                 </li>
 
-                <!-- Nav Item - Kelas -->
                 <li class="nav-item">
                     <a class="nav-link text-sidebar" href="/kelas">
-                        <div class="fas fa-fw fa-university mr-1 ml-1"></div>
-                        <span>Data Kelas</span>
+                        <div class="fas fa-fw fa-clipboard-check mr-1 ml-1"></div>
+                        <span>Pengambilan Barang</span>
                     </a>
                 </li>
 
-                <!-- Nav Item - SPP -->
                 <li class="nav-item">
                     <a class="nav-link text-sidebar" href="/spp">
                         <div class="fas fa-fw fa-money-bill-alt mr-1 ml-1"></div>
-                        <span>Data SPP</span>
+                        <span>Pembayaran</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-sidebar" href="/">
+                        <div class="fas fa-fw fa-sync mr-1 ml-1"></div>
+                        <span>Pengembalian Barang</span>
                     </a>
                 </li>
 
@@ -111,32 +110,39 @@
 
                 <!-- Heading -->
                 <div class="sidebar-heading">
-                    Transaksi
+                    Profile
                 </div>
 
                 <!-- Nav Item - Transaksi -->
                 <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/transaksi">
-                        <div class="fas fa-fw fa-paper-plane mr-1 ml-1"></div>
-                        <span>Transaksi</span>
+                    <a class="nav-link text-sidebar" href="/profile">
+                        <div class="fas fa-fw fa-user mr-1 ml-1"></div>
+                        <span>Profile</span>
                     </a>
                 </li>
 
                 <!-- Nav Item - History Pembayaran -->
                 <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/history">
-                        <div class="fas fa-fw fa-history mr-1 ml-1"></div>
-                        <span>History Pembayaran</span>
+                    <a class="nav-link text-sidebar" style="cursor: pointer;" data-toggle="modal" data-target="#logoutModal">
+                        <div class="fas fa-fw fa-sign-out-alt mr-1 ml-1"></div>
+                        <span>Logout</span>
                     </a>
                 </li>
 
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-sidebar" href="/history">
+                        <div class="fas fa-fw fa-cog mr-1 ml-1"></div>
+                        <span>Pengaturan</span>
+                    </a>
+                </li> -->
+
                 <!-- Nav Item - Generate Laporan -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link text-sidebar" href="/laporan">
                         <div class="fas fa-fw fa-print mr-1 ml-1"></div>
                         <span>Generate Laporan</span>
                     </a>
-                </li>
+                </li> -->
             <?php endif; ?>
 
             <?php if (session()->get('level') == 'pelanggan') : ?>
@@ -231,7 +237,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= session()->get('nama_petugas'); ?></span>
-                                <img class="img-profile rounded-circle" src="/img/petugas/<?= session()->get('foto'); ?>">
+                                <img class="img-profile rounded-circle" src="/img/undraw_profile_2.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

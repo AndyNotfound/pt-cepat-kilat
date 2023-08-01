@@ -20,7 +20,7 @@ class AdminFilter implements FilterInterface
     {
         // Do something here
         if (session()->get('level') == 'admin') {
-            return redirect()->to('/dashboard');
+            return redirect()->to('/home');
         }
     }
 }

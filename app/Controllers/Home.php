@@ -22,7 +22,7 @@ class Home extends BaseController
 	public function dashboard()
 	{
 		$data = [
-			'title' => 'Page | Dashboard',
+			'title' => 'Page | Halaman Utama',
 			'dataSiswa' => $this->LaporanModel->countSiswa(),
 			'dataKelas' => $this->LaporanModel->countKelas(),
 			'dataPetugas' => $this->LaporanModel->countPetugas()
