@@ -2,20 +2,20 @@
 
 namespace App\Controllers;
 
-use App\Models\SiswaModel;
+use App\Models\PengirimanModel;
 
 class Pengiriman extends BaseController
 {
     public function __construct()
     {
-        $this->SiswaModel = new SiswaModel();
+        $this->PengirimanModel = new PengirimanModel();
     }
 
     public function index()
     {
         $data = [
             'title' => 'Pengiriman | Barang',
-            'siswa' => $this->SiswaModel->getSiswa()
+            'pengiriman' => $this->PengirimanModel->getPengiriman()
         ];
         return view('pengiriman/pengiriman', $data);
     }

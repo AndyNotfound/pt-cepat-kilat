@@ -6,6 +6,36 @@
   overflow-x: hidden;
 }
 
+.badge-status {
+  display: inline-block !important;
+  margin: 9px 0px 0px 14px;
+  padding: 5px 10px !important;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.Processed {
+  background-color: #D8F3FF;
+  color: #0FB7FF;
+}
+
+.Completed {
+  background-color: #DCF6E8;
+  color: #28C76F;
+}
+
+.Ready {
+  background-color: #F4D6FF;
+  color: #BD00FF;
+}
+
+.Cancelled {
+  background-color: #FBE3E4;
+  color: #EA5455;
+}
+
 .sidebar-brand-text {
   font-family: "Oleo Script", sans-serif;
   font-size: 30px;

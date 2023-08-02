@@ -52,15 +52,12 @@
                     <sup><i class="fas fa-comment-dollar" aria-hidden="true"></i></sup> -->
                 </div>
             </a>
-
-            <?php if (session()->get('level') == 'admin') : ?>
                 
                 <!-- Heading -->
                 <div class="sidebar-heading pt-3">
                     Main Menu
                 </div>
 
-                <!-- Nav Item - Dashboard -->
                 <li class="nav-item">
                     <a class="nav-link text-sidebar" href="/dashboard">
                         <div class="fas fa-fw fa-home mr-1 ml-1"></div>
@@ -68,7 +65,6 @@
                     </a>
                 </li>
                 
-                <!-- Nav Item - Pengiriman -->
                 <li class="nav-item">
                     <a class="nav-link text-sidebar" href="/pengiriman">
                         <div class="fas fa-fw fa-box mr-1 ml-1"></div>
@@ -76,30 +72,29 @@
                     </a>
                 </li>
 
-                <!-- Nav Item - Petugas -->
                 <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/petugas">
+                    <a class="nav-link text-sidebar" href="/pelacakan">
                         <div class="fas fa-fw fa-map-marker-alt mr-1 ml-1"></div>
                         <span>Pelacakan Barang</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/kelas">
+                    <a class="nav-link text-sidebar" href="/pengambilan">
                         <div class="fas fa-fw fa-clipboard-check mr-1 ml-1"></div>
                         <span>Pengambilan Barang</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/spp">
+                    <a class="nav-link text-sidebar" href="/pembayaran">
                         <div class="fas fa-fw fa-money-bill-alt mr-1 ml-1"></div>
                         <span>Pembayaran</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/">
+                    <a class="nav-link text-sidebar" href="/pengembalian">
                         <div class="fas fa-fw fa-sync mr-1 ml-1"></div>
                         <span>Pengembalian Barang</span>
                     </a>
@@ -128,79 +123,6 @@
                         <span>Logout</span>
                     </a>
                 </li>
-
-                <!-- <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/history">
-                        <div class="fas fa-fw fa-cog mr-1 ml-1"></div>
-                        <span>Pengaturan</span>
-                    </a>
-                </li> -->
-
-                <!-- Nav Item - Generate Laporan -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/laporan">
-                        <div class="fas fa-fw fa-print mr-1 ml-1"></div>
-                        <span>Generate Laporan</span>
-                    </a>
-                </li> -->
-            <?php endif; ?>
-
-            <?php if (session()->get('level') == 'pelanggan') : ?>
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/dashboard">
-                        <div class="fas fa-fw fa-tachometer-alt mr-1 ml-1"></div>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-
-                <!-- Divider -->
-                <hr class="sidebar-divider">
-
-                <!-- Heading -->
-                <div class="sidebar-heading">
-                    Transaksi
-                </div>
-
-                <!-- Nav Item - Transaksi -->
-                <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/transaksi">
-                        <div class="fas fa-fw fa-paper-plane mr-1 ml-1"></div>
-                        <span>Transaksi</span>
-                    </a>
-                </li>
-
-                <!-- Nav Item - History Pembayaran -->
-                <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/history">
-                        <div class="fas fa-fw fa-history mr-1 ml-1"></div>
-                        <span>History Pembayaran</span>
-                    </a>
-                </li>
-
-                <!-- Nav Item - Generate Laporan -->
-                <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/laporan">
-                        <div class="fas fa-fw fa-print mr-1 ml-1"></div>
-                        <span>Generate Laporan</span>
-                    </a>
-                </li>
-            <?php endif; ?>
-
-            <?php if (session()->get('level') == 'siswa') : ?>
-                <!-- Heading -->
-                <div class="sidebar-heading">
-                    History
-                </div>
-
-                <!-- Nav Item - History Pembayaran -->
-                <li class="nav-item">
-                    <a class="nav-link text-sidebar" href="/history">
-                        <div class="fas fa-fw fa-history mr-1 ml-1"></div>
-                        <span>History Pembayaran</span>
-                    </a>
-                </li>
-            <?php endif; ?>
 
 
             <!-- Divider -->
